@@ -1,0 +1,18 @@
+    <!doctype html>
+    <html>
+      <head>
+        <title>Tasklist</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://rawgithub.com/krzysztofbialek/Rails-Girls-Warsaw-App/master/style.css" />
+        <div>
+      <h1>My tasks</h1>
+      <ul>
+        <% for task in @tasks %>
+        <li><%=task.name %> (<%=task.date%>) <input type="checkbox"<% if task.done? %> checked<% end %>></li>
+       <% end %>
+          </ul>
+    </div>
+      </head>
+      <body>
+      </body>
+    </html>
